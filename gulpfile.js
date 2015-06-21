@@ -12,7 +12,7 @@ gulp.task("webpack", function() {
         filename: "main.js"
       }
     }))
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("./www"));
 });
 
 gulp.task("jade", function() {
@@ -20,7 +20,7 @@ gulp.task("jade", function() {
     .pipe(jade({
       pretty: true
     }))
-    .pipe(gulp.dest("."));
+    .pipe(gulp.dest("./www"));
 });
 
 gulp.task("watch", function() {
