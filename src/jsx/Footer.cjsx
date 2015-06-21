@@ -12,10 +12,12 @@ Footer = React.createClass
   render: ->
     <div className="row">
       <div className="col-md-12">
-        <div className="btn-group">
-          <Button value="saft" name="Saft" add={@_add}/>
-          <Button value="haeferl" name="Häferl" add={@_add}/>
-          <Button value="200ml" name="200ml" add={@_add}/>
+        <div className="text-center">
+          <div className="btn-group btn-group-lg">
+            <Button value="saft" name="Saft" add={@_add}/>
+            <Button value="haeferl" name="Häferl" add={@_add}/>
+            <Button value="200ml" name="200ml" add={@_add}/>
+          </div>
         </div>
       </div>
     </div>

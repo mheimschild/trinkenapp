@@ -9,7 +9,7 @@ Header = React.createClass
   render: ->
     <div className="row">
       <div className="col-md-12">
-        <button className="btn btn-success btn-block" onClick={@_clear}>Neuer Tag</button>
+        <button className="btn btn-lg btn-success btn-block" onClick={@_clear}>Neuer Tag</button>
       </div>
     </div>
 

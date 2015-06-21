@@ -22,7 +22,7 @@ App = React.createClass
     @store.addListener @_onchange
 
   render: ->
-    <div className="container">
+    <div className="container-fluid">
       <Header dispatcher={@dispatcher}/>
       <List data={@state.list} dispatcher={@dispatcher}/>
       <Footer dispatcher={@dispatcher}/>
