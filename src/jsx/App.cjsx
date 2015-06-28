@@ -10,10 +10,12 @@ App = React.createClass
   _onchange: ->
     @setState(
       list: @store.getList()
+      total: @store.getTotal()
     )
 
   getInitialState: ->
-    {list: []}
+    list: []
+    total: 0
 
   componentWillMount: ->
     @dispatcher = new Dispatcher()
@@ -23,7 +25,7 @@ App = React.createClass
 
   render: ->
     <div className="container-fluid">
-      <Header dispatcher={@dispatcher}/>
+      <Header dispatcher={@dispatcher} total={@state.total}/>
       <List data={@state.list} dispatcher={@dispatcher}/>
       <Footer dispatcher={@dispatcher}/>
     </div>
