@@ -10,5 +10,5 @@
 
 - to build mobile client use
 
-    phonegap platform add android
+    phonegap platform add android  
     phonegap build android --release
